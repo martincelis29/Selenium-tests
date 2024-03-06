@@ -1,0 +1,30 @@
+{
+  "name": "selenium-webdriver",
+  "description": "Selenium Webdriver QA Automatizado",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "jest ./Tests/**/index.test.js --notify",
+    "start:tipddy": "jest ./Tests/Tipddy/index.test.js --notify --collectCoverageFrom='./Tests/Tipddy/*.js'",
+    "start:uoh": "jest ./Tests/Universidad Ohiggins/index.test.js --notify --collectCoverageFrom='./Tests/Universidad Ohiggins/*.js'",
+    "reporter": "allure serve allure-results"
+  },
+  "dependencies": {
+    "@types/selenium-webdriver": "^4.1.21",
+    "assert": "^2.1.0",
+    "chromedriver": "^122.0.3",
+    "geckodriver": "^4.3.3",
+    "jest": "^29.7.0",
+    "node-notifier": "^10.0.1",
+    "selenium-webdriver": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "allure-commandline": "^2.27.0",
+    "allure-jest": "^2.13.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-jest": "^27.9.0",
+    "jest-html-reporters": "^3.1.7",
+    "jest-worker": "^29.7.0",
+    "prettier": "^3.2.5"
+  }
+}
