@@ -2,8 +2,6 @@
 
 # Requires  docker, docker-compose, node, npm
 
-docker compose start
-
+docker-compose up -d
 npm run start
-
-docker compose stop
+docker-compose down
